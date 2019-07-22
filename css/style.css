@@ -5862,6 +5862,12 @@ body {
     body #admin-menu .dropdown li {
       line-height: normal; }
 
+.pane-page-site-name {
+  font-family: "Nimbus Sans Extd Regular"; }
+
+.pane-page-slogan {
+  font-family: "Nimbus Sans Extd Light"; }
+
 @media screen and (min-width: 768px) {
   .navbar.container {
     max-width: 720px; } }
@@ -5932,10 +5938,12 @@ ul.secondary {
 
 .page-header {
   color: #dfdfd3;
+  font-family: "Nimbus Sans Extd Light";
   margin-top: 0; }
 
 div.main-content {
-  background-color: #ffffff; }
+  background-color: #ffffff;
+  font-family: "Nimbus Sans Extd Regular"; }
 
 .region-sidebar-first .block:first-child h2.block-title,
 .region-sidebar-second .block:first-child h2.block-title {

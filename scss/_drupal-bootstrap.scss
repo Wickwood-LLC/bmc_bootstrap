@@ -106,6 +106,13 @@ body {
   }
 }
 
+.pane-page-site-name {
+  font-family: "Nimbus Sans Extd Regular";
+}
+.pane-page-slogan {
+  font-family: "Nimbus Sans Extd Light";
+}
+
 // Default navbar.
 .navbar {
   &.container {
@@ -190,11 +197,13 @@ ul.secondary {
 // Page header.
 .page-header {
   color: #dfdfd3;
+  font-family: "Nimbus Sans Extd Light";
   margin-top: 0;
 }
 
 div.main-content {
   background-color: #ffffff;
+  font-family: "Nimbus Sans Extd Regular";
 }
 
 // Sidebar blocks.
