@@ -5931,7 +5931,11 @@ ul.secondary {
       float: right; } }
 
 .page-header {
+  color: #dfdfd3;
   margin-top: 0; }
+
+div.main-content {
+  background-color: #ffffff; }
 
 .region-sidebar-first .block:first-child h2.block-title,
 .region-sidebar-second .block:first-child h2.block-title {
