@@ -31,6 +31,7 @@ stylesheets[all][] = css/style.css
 ;;;;;;;;;;;;;;;;;;;;;
 ;; Scripts
 ;;;;;;;;;;;;;;;;;;;;;
+scripts[] = js/bmc_bootstrap.js
 
 ; Uncomment the following scripts if using Less source JavaScript files.
 ;scripts[] = 'bootstrap/js/affix.js'
