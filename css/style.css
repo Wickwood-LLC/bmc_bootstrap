@@ -6431,4 +6431,9 @@ a .glyphicon.icon-after {
     margin-bottom: 0.5em; }
   #block-panels-mini-header a {
     color: #dfdfd3; }
+
+#mini-panel-footer {
+  text-align: center; }
+  #mini-panel-footer .pane-menu-menu-footer-links li {
+    display: inline-block; }
 /*# sourceMappingURL=style.css.map */
