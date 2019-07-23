@@ -901,6 +901,24 @@ a {
 
 #block-panels-mini-header {
   margin: 0.5em 0;
+
+  #wwm-collapse-3 {
+    flex-flow: row wrap;
+
+    > * {
+      flex: 100%;
+    }
+
+    @include breakpoint(992px){
+        flex-flow: row nowrap;
+        
+        .left-column, .right-column {
+          flex: 0 1 15%;
+        }
+        .middle-column {
+          flex: 3 1 70%;
+        }}
+  }
   
   .middle-column  {
     justify-content: center;
@@ -911,7 +929,8 @@ a {
     display: inline-block;
     margin-bottom: 0.5em;
   }
-  .pane-page-site-name {
-    
+
+  a {
+    color: #dfdfd3;
   }
 }
