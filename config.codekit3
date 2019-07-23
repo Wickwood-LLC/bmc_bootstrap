@@ -16,17 +16,6 @@
 		"oAP": "/bmc_bootstrap.info",
 		"oF": 0
 		},
-	"/bmcattorney.png": {
-		"ft": 32768,
-		"iS": 2688273,
-		"oA": 0,
-		"oAP": "/bmcattorney.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
 	"/bootstrap/.gitignore": {
 		"cB": 0,
 		"ft": 8192,
@@ -1797,6 +1786,13 @@
 		"oF": 0,
 		"oS": 3
 		},
+	"/css/style.css.map": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/css/style.css.map",
+		"oF": 0
+		},
 	"/favicon.ico": {
 		"cB": 0,
 		"ft": 8192,
@@ -1871,12 +1867,12 @@
 		"uCM": 0
 		},
 	"/scss/style.scss": {
-		"aP": 0,
+		"aP": 1,
 		"bl": 0,
 		"dP": 10,
 		"dS": 0,
 		"ft": 4,
-		"ma": 0,
+		"ma": 1,
 		"oA": 0,
 		"oAP": "/css/style.css",
 		"oF": 0,
