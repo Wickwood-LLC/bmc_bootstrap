@@ -5799,7 +5799,10 @@ body {
       line-height: normal; }
 
 .pane-page-site-name {
-  font-family: nimbus-sans-extended, sans-serif; }
+  font-family: nimbus-sans-extended, sans-serif;
+  font-size: 2em;
+  letter-spacing: 4px a;
+    letter-spacing-color: white; }
 
 .pane-page-slogan {
   font-family: nimbus-sans-extended, sans-serif;
@@ -5873,11 +5876,10 @@ ul.secondary {
     ul.secondary {
       float: right; } }
 
-.page-header {
+#page-header {
   color: #dfdfd3;
   font-family: nimbus-sans-extended, sans-serif;
-  font-weight: 300;
-  margin-top: 0; }
+  font-weight: 300; }
 
 div.main-content {
   background-color: #ffffff;
@@ -6397,7 +6399,7 @@ a .glyphicon.icon-after {
   margin-right: -.25em; }
 
 #block-panels-mini-header {
-  margin-top: 0.5em; }
+  margin: 0.5em 0; }
   #block-panels-mini-header .middle-column {
     justify-content: center;
     display: flex;
