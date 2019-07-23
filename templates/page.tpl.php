@@ -74,7 +74,7 @@
  * @ingroup templates
  */
 ?>
-<header id="navbar" role="banner" class="<?php print $navbar_classes; ?>">
+<!-- <header id="navbar" role="banner" class="<?php print $navbar_classes; ?>">
   <div class="<?php print $container_class; ?>">
     <div class="navbar-header">
       <?php if ($logo): ?>
@@ -113,14 +113,14 @@
       </div>
     <?php endif; ?>
   </div>
-</header>
+</header> -->
 
 <div class="main-container <?php print $container_class; ?>">
 
   <header role="banner" id="page-header">
-    <?php if (!empty($site_slogan)): ?>
+    <!-- <?php if (!empty($site_slogan)): ?>
       <p class="lead"><?php print $site_slogan; ?></p>
-    <?php endif; ?>
+    <?php endif; ?> -->
 
     <?php print render($page['header']); ?>
   </header> <!-- /#page-header -->
