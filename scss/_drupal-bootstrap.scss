@@ -49,6 +49,9 @@ body {
   // https://www.drupal.org/node/1870076
   position: relative;
   background-color: #242440;
+  font-size: 22px;
+  line-height: normal;
+
   &.admin-expanded.admin-vertical.admin-nw .navbar,
   &.admin-expanded.admin-vertical.admin-sw .navbar {
     margin-left: 260px;
