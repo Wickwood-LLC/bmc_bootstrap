@@ -110,10 +110,11 @@ body {
 }
 
 .pane-page-site-name {
-  font-family: nimbus-sans, sans-serif;
+  font-family: nimbus-sans-extended, sans-serif;
 }
 .pane-page-slogan {
-  font-family: nimbus-sans, sans-serif;
+  font-family: nimbus-sans-extended, sans-serif;
+  font-weight: 300;
 }
 
 // Default navbar.
@@ -200,13 +201,14 @@ ul.secondary {
 // Page header.
 .page-header {
   color: #dfdfd3;
-  font-family: nimbus-sans, sans-serif;
+  font-family: nimbus-sans-extended, sans-serif;
+  font-weight: 300;
   margin-top: 0;
 }
 
 div.main-content {
   background-color: #ffffff;
-  font-family: nimbus-sans, sans-serif;
+  font-family: nimbus-sans-extended, sans-serif;
 }
 
 // Sidebar blocks.
