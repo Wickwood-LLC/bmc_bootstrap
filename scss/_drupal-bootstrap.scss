@@ -891,3 +891,14 @@ a {
     margin-right: -.25em;
   }
 }
+
+#block-panels-mini-header {
+  .middle-column  {
+    justify-content: center;
+    display: flex;
+    text-align: center;
+  }
+  .pane-page-logo img {
+    display: inline-block;
+  }
+}

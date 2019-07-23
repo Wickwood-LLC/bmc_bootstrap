@@ -6393,4 +6393,12 @@ a .glyphicon.icon-after {
 .btn .glyphicon.icon-after {
   margin-left: .25em;
   margin-right: -.25em; }
+
+#block-panels-mini-header .middle-column {
+  justify-content: center;
+  display: flex;
+  text-align: center; }
+
+#block-panels-mini-header .pane-page-logo img {
+  display: inline-block; }
 /*# sourceMappingURL=style.css.map */
