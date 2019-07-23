@@ -907,17 +907,39 @@ a {
 
     > * {
       flex: 100%;
+      justify-content: center;
+      text-align: center;
+    }
+
+    @include breakpoint(768 991px){
+      .left-column {
+        li {
+          display: inline-block;
+        }
+      }
+      .right-column {
+        br {
+          display: none;
+        }
+      }
     }
 
     @include breakpoint(992px){
-        flex-flow: row nowrap;
-        
-        .left-column, .right-column {
-          flex: 0 1 15%;
-        }
-        .middle-column {
-          flex: 3 1 70%;
-        }}
+      flex-flow: row nowrap;
+      
+      .left-column {
+        text-align: left;
+      }
+      .right-column {
+        text-align: right;
+      }
+      .left-column, .right-column {
+        flex: 0 1 15%;
+      }
+      .middle-column {
+        flex: 3 1 70%;
+      }
+    }
   }
   
   .middle-column  {

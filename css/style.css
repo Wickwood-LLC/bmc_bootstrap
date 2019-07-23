@@ -6403,10 +6403,21 @@ a .glyphicon.icon-after {
   #block-panels-mini-header #wwm-collapse-3 {
     flex-flow: row wrap; }
     #block-panels-mini-header #wwm-collapse-3 > * {
-      flex: 100%; }
+      flex: 100%;
+      justify-content: center;
+      text-align: center; }
+    @media (min-width: 768) and (max-width: 991px) {
+      #block-panels-mini-header #wwm-collapse-3 .left-column li {
+        display: inline-block; }
+      #block-panels-mini-header #wwm-collapse-3 .right-column br {
+        display: none; } }
     @media (min-width: 992px) {
       #block-panels-mini-header #wwm-collapse-3 {
         flex-flow: row nowrap; }
+        #block-panels-mini-header #wwm-collapse-3 .left-column {
+          text-align: left; }
+        #block-panels-mini-header #wwm-collapse-3 .right-column {
+          text-align: right; }
         #block-panels-mini-header #wwm-collapse-3 .left-column, #block-panels-mini-header #wwm-collapse-3 .right-column {
           flex: 0 1 15%; }
         #block-panels-mini-header #wwm-collapse-3 .middle-column {
