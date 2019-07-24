@@ -6409,6 +6409,8 @@ a .glyphicon.icon-after {
       text-align: center; }
     #block-panels-mini-header #wwm-collapse-3 .left-column li {
       display: inline-block; }
+      #block-panels-mini-header #wwm-collapse-3 .left-column li + li {
+        margin-left: 0.5em; }
     #block-panels-mini-header #wwm-collapse-3 .right-column br {
       display: none; }
     @media (min-width: 992px) {
@@ -6418,6 +6420,8 @@ a .glyphicon.icon-after {
           text-align: left; }
           #block-panels-mini-header #wwm-collapse-3 .left-column li {
             display: block; }
+            #block-panels-mini-header #wwm-collapse-3 .left-column li + li {
+              margin-left: 0; }
         #block-panels-mini-header #wwm-collapse-3 .right-column {
           text-align: right; }
           #block-panels-mini-header #wwm-collapse-3 .right-column br {
@@ -6447,11 +6451,14 @@ a .glyphicon.icon-after {
   #block-panels-mini-header .pane-system-main-menu.sticky-menu-full {
     position: fixed;
     background: #242341;
-    width: 628px;
-    right: -628px;
+    width: 205px;
+    right: -205px;
     z-index: 50;
-    transition: position, 1s;
+    transition: position, 0.5s;
     padding: 0.5em 1em; }
+    #block-panels-mini-header .pane-system-main-menu.sticky-menu-full li {
+      display: block;
+      text-align: right; }
     #block-panels-mini-header .pane-system-main-menu.sticky-menu-full:hover {
       position: fixed;
       right: 0;
@@ -6471,7 +6478,7 @@ a .glyphicon.icon-after {
       color: #242440;
       box-shadow: 2px 2px 30px -3px #383838;
       opacity: 1;
-      transition: all 1.5s ease 0.5s; }
+      transition: all 1s ease 0.5s; }
   #block-panels-mini-header .pane-contact-info.sticky-header {
     background: white;
     position: fixed;
