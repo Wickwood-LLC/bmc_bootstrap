@@ -955,6 +955,11 @@ a {
 
   a {
     color: #dfdfd3;
+
+    &:hover {
+      background-color: transparent;
+      text-decoration: underline;
+    }
   }
 
   .pane-system-main-menu {
