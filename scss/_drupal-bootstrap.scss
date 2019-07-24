@@ -993,8 +993,7 @@ a {
       transition: position, 0.5s;
       padding: 0.5em 1em;
 
-      li {
-        display: block;
+      ul.nav {
         text-align: right;
       }
 

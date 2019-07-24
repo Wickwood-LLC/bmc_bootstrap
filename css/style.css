@@ -6456,8 +6456,7 @@ a .glyphicon.icon-after {
     z-index: 50;
     transition: position, 0.5s;
     padding: 0.5em 1em; }
-    #block-panels-mini-header .pane-system-main-menu.sticky-menu-full li {
-      display: block;
+    #block-panels-mini-header .pane-system-main-menu.sticky-menu-full ul.menu {
       text-align: right; }
     #block-panels-mini-header .pane-system-main-menu.sticky-menu-full:hover {
       position: fixed;
