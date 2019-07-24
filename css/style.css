@@ -6407,18 +6407,21 @@ a .glyphicon.icon-after {
       flex: 100%;
       justify-content: center;
       text-align: center; }
-    @media (min-width: 768px) and (max-width: 991px) {
-      #block-panels-mini-header #wwm-collapse-3 .left-column li {
-        display: inline-block; }
-      #block-panels-mini-header #wwm-collapse-3 .right-column br {
-        display: none; } }
+    #block-panels-mini-header #wwm-collapse-3 .left-column li {
+      display: inline-block; }
+    #block-panels-mini-header #wwm-collapse-3 .right-column br {
+      display: none; }
     @media (min-width: 992px) {
       #block-panels-mini-header #wwm-collapse-3 {
         flex-flow: row nowrap; }
         #block-panels-mini-header #wwm-collapse-3 .left-column {
           text-align: left; }
+          #block-panels-mini-header #wwm-collapse-3 .left-column li {
+            display: block; }
         #block-panels-mini-header #wwm-collapse-3 .right-column {
           text-align: right; }
+          #block-panels-mini-header #wwm-collapse-3 .right-column br {
+            display: inline; }
         #block-panels-mini-header #wwm-collapse-3 .left-column, #block-panels-mini-header #wwm-collapse-3 .right-column {
           flex: 0 1 22%; }
         #block-panels-mini-header #wwm-collapse-3 .middle-column {
@@ -6443,11 +6446,12 @@ a .glyphicon.icon-after {
       text-decoration: underline; }
   #block-panels-mini-header .pane-system-main-menu.sticky-menu-full {
     position: fixed;
-    background: #a8b559;
+    background: #242341;
     width: 628px;
     right: -628px;
     z-index: 50;
-    transition: 1s; }
+    transition: position, 1s;
+    padding: 0.5em 1em; }
     #block-panels-mini-header .pane-system-main-menu.sticky-menu-full:hover {
       position: fixed;
       right: 0;
@@ -6457,15 +6461,14 @@ a .glyphicon.icon-after {
         transition: 0.5s; }
     #block-panels-mini-header .pane-system-main-menu.sticky-menu-full:before {
       content: '\f0c9';
-      font-family: 'Font Awesome 5 Pro';
-      font-size: 24px;
-      left: -45px;
-      background: #a6b54c;
+      font-family: 'FontAwesome';
+      left: -41px;
+      background: white;
       padding: 0.5em;
       box-sizing: border-box;
       top: 0;
       position: absolute;
-      color: white;
+      color: #242440;
       box-shadow: 2px 2px 30px -3px #383838;
       opacity: 1;
       transition: all 1.5s ease 0.5s; }
