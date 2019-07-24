@@ -5883,7 +5883,7 @@ ul.secondary {
 
 div.main-content {
   background-color: #ffffff;
-  font-family: nimbus-sans-extended, sans-serif; }
+  font-family: nimbus-sans, sans-serif; }
 
 .region-sidebar-first .block:first-child h2.block-title,
 .region-sidebar-second .block:first-child h2.block-title {
@@ -6406,7 +6406,7 @@ a .glyphicon.icon-after {
       flex: 100%;
       justify-content: center;
       text-align: center; }
-    @media (min-width: 768) and (max-width: 991px) {
+    @media (min-width: 768px) and (max-width: 991px) {
       #block-panels-mini-header #wwm-collapse-3 .left-column li {
         display: inline-block; }
       #block-panels-mini-header #wwm-collapse-3 .right-column br {

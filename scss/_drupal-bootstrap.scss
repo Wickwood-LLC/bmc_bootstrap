@@ -213,7 +213,7 @@ ul.secondary {
 
 div.main-content {
   background-color: #ffffff;
-  font-family: nimbus-sans-extended, sans-serif;
+  font-family: nimbus-sans, sans-serif;
 }
 
 // Sidebar blocks.
@@ -911,7 +911,7 @@ a {
       text-align: center;
     }
 
-    @include breakpoint(768 991px){
+    @include breakpoint(768px 991px){
       .left-column {
         li {
           display: inline-block;
