@@ -112,7 +112,7 @@ body {
 .pane-page-site-name {
   font-family: nimbus-sans-extended, sans-serif;
   font-size: 2em;
-  letter-spacing: 4px
+  letter-spacing: 4px;
 
   a {
     color: white;
@@ -950,6 +950,7 @@ a {
   .pane-page-logo img {
     display: inline-block;
     margin-bottom: 0.5em;
+    margin-top: 0.5em;
   }
 
   a {
@@ -969,9 +970,14 @@ a {
 }
 
 #mini-panel-footer {
+  color: #dfdfd3;
   text-align: center;
   
   .pane-menu-menu-footer-links li {
     display: inline-block;
+    
+    a {
+      color: #dfdfd3;
+    }
   }
 }

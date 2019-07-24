@@ -5801,8 +5801,9 @@ body {
 .pane-page-site-name {
   font-family: nimbus-sans-extended, sans-serif;
   font-size: 2em;
-  letter-spacing: 4px a;
-    letter-spacing-color: white; }
+  letter-spacing: 4px; }
+  .pane-page-site-name a {
+    color: white; }
 
 .pane-page-slogan {
   font-family: nimbus-sans-extended, sans-serif;
@@ -6428,7 +6429,8 @@ a .glyphicon.icon-after {
     text-align: center; }
   #block-panels-mini-header .pane-page-logo img {
     display: inline-block;
-    margin-bottom: 0.5em; }
+    margin-bottom: 0.5em;
+    margin-top: 0.5em; }
   #block-panels-mini-header a {
     color: #dfdfd3; }
   #block-panels-mini-header .pane-system-main-menu .nav > li > a {
@@ -6438,7 +6440,10 @@ a .glyphicon.icon-after {
       text-decoration: underline; }
 
 #mini-panel-footer {
+  color: #dfdfd3;
   text-align: center; }
   #mini-panel-footer .pane-menu-menu-footer-links li {
     display: inline-block; }
+    #mini-panel-footer .pane-menu-menu-footer-links li a {
+      color: #dfdfd3; }
 /*# sourceMappingURL=style.css.map */
