@@ -988,18 +988,18 @@ a {
       position: fixed;
       background: #242341;
       width: 205px;
-      right: -205px;
+      left: -205px;
       z-index: 50;
       transition: position, 0.5s;
       padding: 0.5em 1em;
 
       ul.nav {
-        text-align: right;
+        text-align: left;
       }
 
       &:hover {
         position: fixed;
-        right: 0;
+        left: 0;
         box-shadow: -5px 5px 20px -3px #383838;
 
         &:before {
@@ -1011,7 +1011,7 @@ a {
       &:before {
         content: '\f0c9';
         font-family: 'FontAwesome';
-        left: -41px;
+        right: -41px;
         background: white;
         padding: 0.5em;
         box-sizing: border-box;

@@ -6452,15 +6452,15 @@ a .glyphicon.icon-after {
     position: fixed;
     background: #242341;
     width: 205px;
-    right: -205px;
+    left: -205px;
     z-index: 50;
     transition: position, 0.5s;
     padding: 0.5em 1em; }
-    #block-panels-mini-header .pane-system-main-menu.sticky-menu-full ul.menu {
-      text-align: right; }
+    #block-panels-mini-header .pane-system-main-menu.sticky-menu-full ul.nav {
+      text-align: left; }
     #block-panels-mini-header .pane-system-main-menu.sticky-menu-full:hover {
       position: fixed;
-      right: 0;
+      left: 0;
       box-shadow: -5px 5px 20px -3px #383838; }
       #block-panels-mini-header .pane-system-main-menu.sticky-menu-full:hover:before {
         opacity: 0;
@@ -6468,7 +6468,7 @@ a .glyphicon.icon-after {
     #block-panels-mini-header .pane-system-main-menu.sticky-menu-full:before {
       content: '\f0c9';
       font-family: 'FontAwesome';
-      left: -41px;
+      right: -41px;
       background: white;
       padding: 0.5em;
       box-sizing: border-box;
