@@ -6441,6 +6441,67 @@ a .glyphicon.icon-after {
     #block-panels-mini-header .pane-system-main-menu .nav > li > a:hover {
       background-color: transparent;
       text-decoration: underline; }
+  #block-panels-mini-header .pane-system-main-menu.sticky-menu-full {
+    position: fixed;
+    background: #a8b559;
+    width: 628px;
+    right: -628px;
+    z-index: 50;
+    transition: 1s; }
+    #block-panels-mini-header .pane-system-main-menu.sticky-menu-full:hover {
+      position: fixed;
+      right: 0;
+      box-shadow: -5px 5px 20px -3px #383838; }
+      #block-panels-mini-header .pane-system-main-menu.sticky-menu-full:hover:before {
+        opacity: 0;
+        transition: 0.5s; }
+    #block-panels-mini-header .pane-system-main-menu.sticky-menu-full:before {
+      content: '\f0c9';
+      font-family: 'Font Awesome 5 Pro';
+      font-size: 24px;
+      left: -45px;
+      background: #a6b54c;
+      padding: 0.5em;
+      box-sizing: border-box;
+      top: 0;
+      position: absolute;
+      color: white;
+      box-shadow: 2px 2px 30px -3px #383838;
+      opacity: 1;
+      transition: all 1.5s ease 0.5s; }
+  #block-panels-mini-header .pane-contact-info.sticky-header {
+    background: white;
+    position: fixed;
+    box-sizing: border-box;
+    left: unset;
+    right: -350px;
+    width: 350px;
+    transition: 1s;
+    z-index: 50; }
+    #block-panels-mini-header .pane-contact-info.sticky-header .site-name {
+      text-shadow: 1px 1px 1px black; }
+      #block-panels-mini-header .pane-contact-info.sticky-header .site-name a {
+        color: #3c6698; }
+    #block-panels-mini-header .pane-contact-info.sticky-header:hover {
+      right: 0;
+      box-shadow: -5px 5px 20px -3px #383838; }
+      #block-panels-mini-header .pane-contact-info.sticky-header:hover:before {
+        opacity: 0;
+        transition: 0.5s; }
+    #block-panels-mini-header .pane-contact-info.sticky-header:before {
+      content: '\f0c9';
+      font-family: 'Font Awesome 5 Pro';
+      font-size: 24px;
+      left: -45px;
+      background: #a7ce38;
+      padding: 0.5em;
+      box-sizing: border-box;
+      top: 0;
+      position: absolute;
+      color: white;
+      box-shadow: 2px 2px 30px -3px #383838;
+      opacity: 1;
+      transition: all 1.5s ease 0.5s; }
 
 #mini-panel-footer {
   color: #dfdfd3;
