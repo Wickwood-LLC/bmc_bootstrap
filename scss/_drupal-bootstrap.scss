@@ -986,3 +986,17 @@ a {
     }
   }
 }
+
+.page-user-login,
+.page-user-password {
+  .page-header {
+    text-align: center;
+  }
+  .form-item {
+    text-align: center;
+  }
+  .form-actions {
+    text-align: center;
+    margin-bottom: 0.5em;
+  }
+}

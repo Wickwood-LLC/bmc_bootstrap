@@ -6449,4 +6449,17 @@ a .glyphicon.icon-after {
     display: inline-block; }
     #mini-panel-footer .pane-menu-menu-footer-links li a {
       color: #dfdfd3; }
+
+.page-user-login .page-header,
+.page-user-password .page-header {
+  text-align: center; }
+
+.page-user-login .form-item,
+.page-user-password .form-item {
+  text-align: center; }
+
+.page-user-login .form-actions,
+.page-user-password .form-actions {
+  text-align: center;
+  margin-bottom: 0.5em; }
 /*# sourceMappingURL=style.css.map */
