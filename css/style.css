@@ -6431,6 +6431,11 @@ a .glyphicon.icon-after {
     margin-bottom: 0.5em; }
   #block-panels-mini-header a {
     color: #dfdfd3; }
+  #block-panels-mini-header .pane-system-main-menu .nav > li > a {
+    padding: 0; }
+    #block-panels-mini-header .pane-system-main-menu .nav > li > a:hover {
+      background-color: transparent;
+      text-decoration: underline; }
 
 #mini-panel-footer {
   text-align: center; }

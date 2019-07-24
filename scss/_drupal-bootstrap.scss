@@ -955,6 +955,17 @@ a {
   a {
     color: #dfdfd3;
   }
+
+  .pane-system-main-menu {
+    .nav > li > a {
+      padding: 0;
+      
+      &:hover {
+        background-color: transparent;
+        text-decoration: underline;
+      }
+    }
+  }
 }
 
 #mini-panel-footer {
