@@ -5801,7 +5801,8 @@ body {
 .pane-page-site-name {
   font-family: nimbus-sans-extended, sans-serif;
   font-size: 2em;
-  letter-spacing: 4px; }
+  letter-spacing: 12px;
+  font-weight: 400; }
   .pane-page-site-name a {
     color: white; }
 
@@ -6433,7 +6434,9 @@ a .glyphicon.icon-after {
           flex: 0 1 190px;
           padding: 0; }
         #block-panels-mini-header #wwm-collapse-3 .middle-column {
-          flex: 3 1 50%; } }
+          flex: 3 1 50%; }
+        #block-panels-mini-header #wwm-collapse-3 span.dot {
+          display: none; } }
   #block-panels-mini-header .middle-column {
     justify-content: center;
     display: flex;
