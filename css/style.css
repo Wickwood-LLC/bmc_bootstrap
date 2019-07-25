@@ -5798,6 +5798,10 @@ body {
     body #admin-menu .dropdown li {
       line-height: normal; }
 
+img {
+  max-width: 100%;
+  height: auto; }
+
 .pane-page-site-name {
   font-family: nimbus-sans-extended, sans-serif;
   font-size: 2em;
