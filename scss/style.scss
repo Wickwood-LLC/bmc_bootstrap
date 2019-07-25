@@ -1,6 +1,9 @@
 // Breakpoint-sass
 @import '../bower_components/breakpoint-sass/stylesheets/breakpoint';
 
+// Mixins
+@import 'mixins';
+
 // Default variables.
 @import 'default-variables';
 
