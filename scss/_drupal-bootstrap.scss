@@ -116,13 +116,19 @@ img {
 
 .pane-page-site-name {
   font-family: nimbus-sans-extended, sans-serif;
-  font-size: 2em;
   letter-spacing: 12px;
   font-weight: 400;
+  @include fluid-type(font-size, 320px, 760px, 22px, 44px); // Values are $property, $min-vw, $max-vw, $min-font-size, $max-font-size
+  @include fluid-type(letter-spacing, 320px, 760px, 22px, 12px); // Values are $property, $min-vw, $max-vw, $min-font-size, $max-font-size
+
+
 
   @include breakpoint(992px 1199px){
     font-size: 1.5em;
     letter-spacing: 6px;
+  }
+  @include breakpoint(1200px){
+    font-size: 2em;
   }
 
   a {
@@ -132,6 +138,7 @@ img {
 .pane-page-slogan {
   font-family: nimbus-sans, sans-serif;
   font-weight: 300;
+  @include fluid-type(font-size, 320px, 760px, 12px, 22px); // Values are $property, $min-vw, $max-vw, $min-font-size, $max-font-size
 }
 
 // Default navbar.
@@ -982,6 +989,7 @@ a {
     display: inline-block;
     margin-bottom: 0.5em;
     margin-top: 0.5em;
+    @include fluid-type(width, 320px, 760px, 72px, 144px); // Values are $property, $min-vw, $max-vw, $min-font-size, $max-font-size
   }
 
   a {
@@ -994,6 +1002,7 @@ a {
   }
 
   .pane-system-main-menu {
+    @include fluid-type(font-size, 320px, 760px, 12px, 22px); // Values are $property, $min-vw, $max-vw, $min-font-size, $max-font-size
     .nav > li > a {
       padding: 0;
       
@@ -1045,50 +1054,52 @@ a {
   }
 
   .pane-contact-info {
+    @include fluid-type(font-size, 320px, 760px, 12px, 22px); // Values are $property, $min-vw, $max-vw, $min-font-size, $max-font-size
+    
     &.sticky-header {
-    background: white;
-    position: fixed;
-    box-sizing: border-box;
-    left: unset;
-    right: -350px;
-    width: 350px;
-    transition: 1s;
-    z-index: 50;
+      background: white;
+      position: fixed;
+      box-sizing: border-box;
+      left: unset;
+      right: -350px;
+      width: 350px;
+      transition: 1s;
+      z-index: 50;
 
-    .site-name {
-      text-shadow: 1px 1px 1px black;
+      .site-name {
+        text-shadow: 1px 1px 1px black;
 
-      a {
-        color: #3c6698;
+        a {
+          color: #3c6698;
+        }
+      }
+
+      &:hover {
+          right: 0;
+          box-shadow: -5px 5px 20px -3px #383838;
+
+          &:before {
+              opacity: 0;
+              transition: 0.5s;
+          }
+      }
+
+      &:before {
+          content: '\f0c9';
+          font-family: 'Font Awesome 5 Pro';
+          font-size: 24px;
+          left: -45px;
+          background: #a7ce38;
+          padding: 0.5em;
+          box-sizing: border-box;
+          top: 0;
+          position: absolute;
+          color: white;
+          box-shadow: 2px 2px 30px -3px #383838;
+          opacity: 1;
+          transition: all 1.5s ease 0.5s;
       }
     }
-
-    &:hover {
-        right: 0;
-        box-shadow: -5px 5px 20px -3px #383838;
-
-        &:before {
-            opacity: 0;
-            transition: 0.5s;
-        }
-    }
-
-    &:before {
-        content: '\f0c9';
-        font-family: 'Font Awesome 5 Pro';
-        font-size: 24px;
-        left: -45px;
-        background: #a7ce38;
-        padding: 0.5em;
-        box-sizing: border-box;
-        top: 0;
-        position: absolute;
-        color: white;
-        box-shadow: 2px 2px 30px -3px #383838;
-        opacity: 1;
-        transition: all 1.5s ease 0.5s;
-    }
-  }
   }
 }
 
