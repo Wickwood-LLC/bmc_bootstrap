@@ -5803,6 +5803,10 @@ body {
   font-size: 2em;
   letter-spacing: 12px;
   font-weight: 400; }
+  @media (min-width: 992px) and (max-width: 1199px) {
+    .pane-page-site-name {
+      font-size: 1.5em;
+      letter-spacing: 6px; } }
   .pane-page-site-name a {
     color: white; }
 

@@ -115,6 +115,11 @@ body {
   letter-spacing: 12px;
   font-weight: 400;
 
+  @include breakpoint(992px 1199px){
+    font-size: 1.5em;
+    letter-spacing: 6px;
+  }
+
   a {
     color: white;
   }
