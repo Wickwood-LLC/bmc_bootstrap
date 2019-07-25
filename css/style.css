@@ -5816,10 +5816,10 @@ img {
       font-size: 44px; } }
   @media screen and (min-width: 320px) {
     .pane-page-site-name {
-      letter-spacing: calc(4px + 8 * (100vw - 320px) / 440); } }
+      letter-spacing: calc(4px + 6 * (100vw - 320px) / 440); } }
   @media screen and (min-width: 760px) {
     .pane-page-site-name {
-      letter-spacing: 12px; } }
+      letter-spacing: 10px; } }
   @media (min-width: 992px) and (max-width: 1199px) {
     .pane-page-site-name {
       font-size: 1.5em;

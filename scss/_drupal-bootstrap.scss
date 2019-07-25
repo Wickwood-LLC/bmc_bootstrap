@@ -119,7 +119,7 @@ img {
   letter-spacing: 12px;
   font-weight: 400;
   @include fluid-type(font-size, 320px, 760px, 22px, 44px); // Values are $property, $min-vw, $max-vw, $min-font-size, $max-font-size
-  @include fluid-type(letter-spacing, 320px, 760px, 4px, 12px); // Values are $property, $min-vw, $max-vw, $min-font-size, $max-font-size
+  @include fluid-type(letter-spacing, 320px, 760px, 4px, 10px); // Values are $property, $min-vw, $max-vw, $min-font-size, $max-font-size
 
 
 
