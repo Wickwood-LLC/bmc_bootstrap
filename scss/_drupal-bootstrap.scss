@@ -114,6 +114,12 @@ img {
   height: auto;
 }
 
+blockquote {
+  font-size: 1em;
+  margin: 1em 5%;
+  font-style: italic;
+}
+
 .pane-page-site-name {
   font-family: nimbus-sans-extended, sans-serif;
   letter-spacing: 12px;
@@ -139,6 +145,12 @@ img {
   font-family: nimbus-sans, sans-serif;
   font-weight: 300;
   @include fluid-type(font-size, 320px, 760px, 12px, 22px); // Values are $property, $min-vw, $max-vw, $min-font-size, $max-font-size
+}
+
+.page-title {
+  padding-bottom: 9px;
+  margin: 20px 0 20px;
+  border-bottom: 1px solid #eeeeee;
 }
 
 // Default navbar.
@@ -231,7 +243,10 @@ ul.secondary {
 
 div.main-content {
   background-color: #ffffff;
+  border-color: 4px solid #dfdfd3;
+  border-radius: 10px;
   font-family: nimbus-sans, sans-serif;
+  padding-bottom: 20px;
 }
 
 // Sidebar blocks.

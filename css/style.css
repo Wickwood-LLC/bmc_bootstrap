@@ -5802,6 +5802,11 @@ img {
   max-width: 100%;
   height: auto; }
 
+blockquote {
+  font-size: 1em;
+  margin: 1em 5%;
+  font-style: italic; }
+
 .pane-page-site-name {
   font-family: nimbus-sans-extended, sans-serif;
   letter-spacing: 12px;
@@ -5840,6 +5845,11 @@ img {
   @media screen and (min-width: 760px) {
     .pane-page-slogan {
       font-size: 22px; } }
+
+.page-title {
+  padding-bottom: 9px;
+  margin: 20px 0 20px;
+  border-bottom: 1px solid #eeeeee; }
 
 @media screen and (min-width: 768px) {
   .navbar.container {
@@ -5916,7 +5926,10 @@ ul.secondary {
 
 div.main-content {
   background-color: #ffffff;
-  font-family: nimbus-sans, sans-serif; }
+  border-color: 4px solid #dfdfd3;
+  border-radius: 10px;
+  font-family: nimbus-sans, sans-serif;
+  padding-bottom: 20px; }
 
 .region-sidebar-first .block:first-child h2.block-title,
 .region-sidebar-second .block:first-child h2.block-title {
