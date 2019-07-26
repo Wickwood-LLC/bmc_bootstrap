@@ -8989,4 +8989,13 @@ body.maintenance-page .logo {
   display: block;
   padding: 0;
 }
+
+body.maintenance-page .main-content {
+  text-align: center;
+}
+
+body.maintenance-page .page-title {
+  border: 0;
+  text-transform: capitalize;
+}
 /*# sourceMappingURL=style.css.map */

@@ -1171,4 +1171,12 @@ body.maintenance-page {
     display: block;
     padding: 0;
   }
+
+  .main-content {
+    text-align: center;
+  }
+  .page-title {
+    border: 0;
+    text-transform: capitalize;
+  }
 }

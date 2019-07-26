@@ -51,7 +51,7 @@
     </div>
   </header>
   <div class="main-container <?php print $container_class; ?>">
-    <div class="row">
+    <div class="row main-content">
       <section class="col-sm-12">
         <a id="main-content"></a>
         <?php if (!empty($title)): ?>
