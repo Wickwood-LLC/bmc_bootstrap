@@ -62,15 +62,9 @@
 
                     if (currentPosition < 0) {
                         $menu.addClass('sticky-menu');
-                        if ($('#admin-menu').length) {
-                        	$menu.css({
-                        		'top': topSpacing,
-                        	})
-                        } else {
-                        	$menu.css({
-                        		'top': 0,
-                        	});
-                        }
+                    	$menu.css({
+                    		'top': topSpacing,
+                    	});
                     } else {
                         $menu.removeClass('sticky-menu');
                         $menu.css({
@@ -82,8 +76,11 @@
                 // console.log('Current position: ' + currentPosition);
             });
 
-            if ($('.sticky-menu').length) { // if sticky menu is activated, move the contact pane into the pull out tab
-                $('.sticky-menu').append('.pane-contact-info');
+            if ($menu.hasClass('sticky-menu')) { // if sticky menu is activated, move the contact pane into the pull out tab
+                $menu.append('.pane-contact-info').css({
+                    'top': topSpacing
+                });
+
             }
         }
     };
