@@ -1149,3 +1149,26 @@ a {
     margin-bottom: 0.5em;
   }
 }
+
+/* Maintenance Page */
+body.maintenance-page {
+  header#navbar {
+    background: transparent;
+    border: 0;
+    text-align: center;
+  }
+
+  .navbar-header {
+    float: none;
+  }
+  .navbar-brand {
+    float: none;
+    display: block;
+    margin: 0;
+  }
+  .logo {
+    float: none;
+    display: block;
+    padding: 0;
+  }
+}

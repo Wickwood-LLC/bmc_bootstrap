@@ -8966,4 +8966,27 @@ a .glyphicon.icon-after {
   text-align: center;
   margin-bottom: 0.5em;
 }
+
+/* Maintenance Page */
+body.maintenance-page header#navbar {
+  background: transparent;
+  border: 0;
+  text-align: center;
+}
+
+body.maintenance-page .navbar-header {
+  float: none;
+}
+
+body.maintenance-page .navbar-brand {
+  float: none;
+  display: block;
+  margin: 0;
+}
+
+body.maintenance-page .logo {
+  float: none;
+  display: block;
+  padding: 0;
+}
 /*# sourceMappingURL=style.css.map */
