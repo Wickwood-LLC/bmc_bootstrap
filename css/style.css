@@ -8990,7 +8990,11 @@ body.maintenance-page .logo {
   padding: 0;
 }
 
-body.maintenance-page .main-content {
+body.maintenance-page div.main-content {
+  text-align: center;
+}
+
+body.maintenance-page div.main-content p {
   text-align: center;
 }
 

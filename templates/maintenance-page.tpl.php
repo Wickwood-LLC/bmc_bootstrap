@@ -45,7 +45,7 @@
           <a class="name navbar-brand pane-page-site-name" href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>"><?php print $site_name; ?></a>
         <?php endif; ?>
         <?php if (!empty($site_slogan)): ?>
-          <p class="lead"><?php print $site_slogan; ?></p>
+          <p class="lead pane-page-slogan"><?php print $site_slogan; ?></p>
         <?php endif; ?>
       </div>
     </div>

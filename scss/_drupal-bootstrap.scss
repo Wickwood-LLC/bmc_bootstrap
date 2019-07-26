@@ -1172,8 +1172,12 @@ body.maintenance-page {
     padding: 0;
   }
 
-  .main-content {
+  div.main-content {
     text-align: center;
+
+    p {
+      text-align: center;
+    }
   }
   .page-title {
     border: 0;
