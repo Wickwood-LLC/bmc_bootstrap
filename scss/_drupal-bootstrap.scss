@@ -248,6 +248,10 @@ div.main-content {
   border-radius: 10px;
   font-family: nimbus-sans, sans-serif;
   padding: 20px 0;
+
+  p {
+    text-align: justify;
+  }
 }
 
 // Sidebar blocks.

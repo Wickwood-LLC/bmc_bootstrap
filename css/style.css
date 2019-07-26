@@ -7982,6 +7982,10 @@ div.main-content {
   padding: 20px 0;
 }
 
+div.main-content p {
+  text-align: justify;
+}
+
 .region-sidebar-first .block:first-child h2.block-title,
 .region-sidebar-second .block:first-child h2.block-title {
   margin-top: 0;
