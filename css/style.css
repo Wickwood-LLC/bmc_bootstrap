@@ -8803,7 +8803,7 @@ a .glyphicon.icon-after {
   text-decoration: underline;
 }
 
-#block-panels-mini-header .pane-system-main-menu.sticky-menu-full {
+#block-panels-mini-header .pane-system-main-menu.sticky-menu {
   position: fixed;
   background: #242341;
   width: 205px;
@@ -8813,22 +8813,22 @@ a .glyphicon.icon-after {
   padding: 0.5em 1em;
 }
 
-#block-panels-mini-header .pane-system-main-menu.sticky-menu-full ul.nav {
+#block-panels-mini-header .pane-system-main-menu.sticky-menu ul.nav {
   text-align: left;
 }
 
-#block-panels-mini-header .pane-system-main-menu.sticky-menu-full:hover {
+#block-panels-mini-header .pane-system-main-menu.sticky-menu:hover {
   position: fixed;
   left: 0;
   box-shadow: -5px 5px 20px -3px #383838;
 }
 
-#block-panels-mini-header .pane-system-main-menu.sticky-menu-full:hover:before {
+#block-panels-mini-header .pane-system-main-menu.sticky-menu:hover:before {
   opacity: 0;
   transition: 0.5s;
 }
 
-#block-panels-mini-header .pane-system-main-menu.sticky-menu-full:before {
+#block-panels-mini-header .pane-system-main-menu.sticky-menu:before {
   content: '\f0c9';
   font-family: 'FontAwesome';
   right: -41px;
