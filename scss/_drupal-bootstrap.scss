@@ -271,6 +271,9 @@ div.main-content {
   p:not([class]) {
     text-align: justify;
   }
+}
+
+#block-system-main {
   li + li {
     margin-top: 1em;
   }
