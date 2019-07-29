@@ -7986,7 +7986,7 @@ div.main-content {
   padding: 20px 0;
 }
 
-div.main-content p {
+div.main-content p:not([class]) {
   text-align: justify;
 }
 
