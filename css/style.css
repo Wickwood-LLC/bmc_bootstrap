@@ -7786,10 +7786,6 @@ blockquote {
   font-style: italic;
 }
 
-.nav > li > a {
-  color: #dfdfd3;
-}
-
 .nav > li > a:hover, .nav > li > a:focus {
   background-color: transparent;
   text-decoration: underline;
@@ -8860,9 +8856,26 @@ a .glyphicon.icon-after {
   }
 }
 
+#block-panels-mini-header a {
+  color: #dfdfd3;
+}
+
 #mini-panel-footer {
   color: #dfdfd3;
   text-align: center;
+  font-size: 12px;
+}
+
+@media screen and (min-width: 320px) {
+  #mini-panel-footer {
+    font-size: calc(12px + 10 * (100vw - 320px) / 440);
+  }
+}
+
+@media screen and (min-width: 760px) {
+  #mini-panel-footer {
+    font-size: 22px;
+  }
 }
 
 #mini-panel-footer .pane-menu-menu-footer-links li {
@@ -8920,6 +8933,10 @@ body.maintenance-page div.main-content {
 
 body.maintenance-page div.main-content p {
   text-align: center;
+}
+
+body.maintenance-page div.main-content li + li {
+  margin-top: 1em;
 }
 
 body.maintenance-page .page-title {

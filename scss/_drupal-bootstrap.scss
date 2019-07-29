@@ -125,8 +125,6 @@ blockquote {
 }
 
 .nav > li > a {
-  color: #dfdfd3;
-
   &:hover,
   &:focus {
     background-color: transparent;
@@ -1082,11 +1080,16 @@ a {
   .pane-contact-info {
     @include fluid-type(font-size, 320px, 760px, 12px, 22px); // Values are $property, $min-vw, $max-vw, $min-font-size, $max-font-size
   }
+
+  a {
+    color: #dfdfd3;
+  }
 }
 
 #mini-panel-footer {
   color: #dfdfd3;
   text-align: center;
+  @include fluid-type(font-size, 320px, 760px, 12px, 22px); // Values are $property, $min-vw, $max-vw, $min-font-size, $max-font-size
   
   .pane-menu-menu-footer-links li {
     display: inline-block;
@@ -1140,6 +1143,9 @@ body.maintenance-page {
 
     p {
       text-align: center;
+    }
+    li + li {
+      margin-top: 1em;
     }
   }
   .page-title {
