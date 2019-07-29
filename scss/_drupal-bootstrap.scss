@@ -109,6 +109,12 @@ body {
   }
 }
 
+.main-container {
+  @include breakpoint(0px 1199px) {
+    width: 90vw;
+  }
+}
+
 #admin-menu {
   height: auto;
 }

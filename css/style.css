@@ -7771,6 +7771,12 @@ body #admin-menu .dropdown li {
   line-height: normal;
 }
 
+@media (min-width: 0px) and (max-width: 1199px) {
+  .main-container {
+    width: 90vw;
+  }
+}
+
 #admin-menu {
   height: auto;
 }
