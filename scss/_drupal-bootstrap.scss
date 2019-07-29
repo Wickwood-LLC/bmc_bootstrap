@@ -271,6 +271,9 @@ div.main-content {
   p:not([class]) {
     text-align: justify;
   }
+  li + li {
+    margin-top: 1em;
+  }
 }
 
 // Sidebar blocks.
@@ -1149,9 +1152,6 @@ body.maintenance-page {
 
     p {
       text-align: center;
-    }
-    li + li {
-      margin-top: 1em;
     }
   }
   .page-title {

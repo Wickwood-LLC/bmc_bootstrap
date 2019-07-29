@@ -7982,6 +7982,10 @@ div.main-content p:not([class]) {
   text-align: justify;
 }
 
+div.main-content li + li {
+  margin-top: 1em;
+}
+
 .region-sidebar-first .block:first-child h2.block-title,
 .region-sidebar-second .block:first-child h2.block-title {
   margin-top: 0;
@@ -8939,10 +8943,6 @@ body.maintenance-page div.main-content {
 
 body.maintenance-page div.main-content p {
   text-align: center;
-}
-
-body.maintenance-page div.main-content li + li {
-  margin-top: 1em;
 }
 
 body.maintenance-page .page-title {
