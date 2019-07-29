@@ -62,6 +62,10 @@
   <title><?php print $head_title; ?></title>
   <?php print $styles; ?>
   <link rel="stylesheet" href="https://use.typekit.net/zpj0zxy.css">
+  <link rel="apple-touch-icon" sizes="180x180" href="<?php drupal_get_path('theme', 'bmc_bootstrap'); ?>/images/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="<?php drupal_get_path('theme', 'bmc_bootstrap'); ?>/images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="<?php drupal_get_path('theme', 'bmc_bootstrap'); ?>/images/favicon-16x16.png">
+  <link rel="manifest" href="<?php drupal_get_path('theme', 'bmc_bootstrap'); ?>/images/site.webmanifest">
   <!-- HTML5 element support for IE6-8 -->
   <!--[if lt IE 9]>
     <script src="https://cdn.jsdelivr.net/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
