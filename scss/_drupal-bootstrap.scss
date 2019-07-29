@@ -124,6 +124,16 @@ blockquote {
   font-style: italic;
 }
 
+.nav > li > a {
+  color: #dfdfd3;
+
+  &:hover,
+  &:focus {
+    background-color: transparent;
+    text-decoration: underline;
+  }
+}
+
 .pane-page-site-name {
   font-family: nimbus-sans-extended, sans-serif;
   letter-spacing: 12px;
@@ -153,7 +163,8 @@ blockquote {
 
 .page-title {
   padding-bottom: 9px;
-  margin: 20px 0 20px;
+  margin-top: 0;
+  margin-bottom: 20px;
   border-bottom: 1px solid #eeeeee;
   text-align: center;
 }
@@ -1016,15 +1027,6 @@ a {
     @include fluid-type(width, 320px, 760px, 72px, 144px); // Values are $property, $min-vw, $max-vw, $min-font-size, $max-font-size
   }
 
-  a {
-    color: #dfdfd3;
-
-    &:hover {
-      background-color: transparent;
-      text-decoration: underline;
-    }
-  }
-
   .pane-system-main-menu {
     @include fluid-type(font-size, 320px, 760px, 12px, 22px); // Values are $property, $min-vw, $max-vw, $min-font-size, $max-font-size
     .nav > li > a {
@@ -1079,51 +1081,6 @@ a {
 
   .pane-contact-info {
     @include fluid-type(font-size, 320px, 760px, 12px, 22px); // Values are $property, $min-vw, $max-vw, $min-font-size, $max-font-size
-    
-    &.sticky-header {
-      background: white;
-      position: fixed;
-      box-sizing: border-box;
-      left: unset;
-      right: -350px;
-      width: 350px;
-      transition: 1s;
-      z-index: 50;
-
-      .site-name {
-        text-shadow: 1px 1px 1px black;
-
-        a {
-          color: #3c6698;
-        }
-      }
-
-      &:hover {
-          right: 0;
-          box-shadow: -5px 5px 20px -3px #383838;
-
-          &:before {
-              opacity: 0;
-              transition: 0.5s;
-          }
-      }
-
-      &:before {
-          content: '\f0c9';
-          font-family: 'Font Awesome 5 Pro';
-          font-size: 24px;
-          left: -45px;
-          background: #a7ce38;
-          padding: 0.5em;
-          box-sizing: border-box;
-          top: 0;
-          position: absolute;
-          color: white;
-          box-shadow: 2px 2px 30px -3px #383838;
-          opacity: 1;
-          transition: all 1.5s ease 0.5s;
-      }
-    }
   }
 }
 
