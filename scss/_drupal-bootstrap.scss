@@ -976,14 +976,6 @@ a {
 
     .left-column {
       order: 1;
-      
-      li {
-        display: inline-block;
-
-        & + li {
-          margin-left: 0.5em;
-        }
-      }
     }
     .right-column {
       br {
@@ -1039,12 +1031,22 @@ a {
 
   .pane-system-main-menu {
     @include fluid-type(font-size, 481px, 760px, 16px, 22px); // Values are $property, $min-vw, $max-vw, $min-font-size, $max-font-size
-    .nav > li > a {
-      padding: 0;
-      
-      &:hover {
-        background-color: transparent;
-        text-decoration: underline;
+    .nav {
+      li {
+        display: inline-block;
+
+        & + li {
+          margin-left: 0.5em;
+        }
+
+        > a {
+          padding: 0;
+          
+          &:hover {
+            background-color: transparent;
+            text-decoration: underline;
+          }
+        }
       }
     }
 
@@ -1065,10 +1067,10 @@ a {
           
           & + li {
             margin: 0;
+          }
 
-            > a {
-              padding: 0.5em;
-            }
+          > a {
+            padding: 0.5em;
           }
         }
       }
