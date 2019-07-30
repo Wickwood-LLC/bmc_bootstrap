@@ -46,6 +46,10 @@
                     });
                 }
                 //console.log("Top spacing is " + topSpacing);
+
+                if ($menu.hasClass('sticky-menu')) { // if sticky menu is activated, move the contact pane into the pull out tab
+                    $menu.append('.pane-contact-info');
+                }
             }
 
             $(window).scroll(function() { // scroll event
@@ -67,11 +71,11 @@
                 }
                 // console.log('Distance from top of page: ' + stickyTop);
                 // console.log('Current position: ' + currentPosition);
-            });
 
-            if ($menu.hasClass('sticky-menu')) { // if sticky menu is activated, move the contact pane into the pull out tab
-                $menu.append('.pane-contact-info');
-            }
+                if ($menu.hasClass('sticky-menu')) { // if sticky menu is activated, move the contact pane into the pull out tab
+                    $menu.append('.pane-contact-info');
+                }
+            });
         }
     };
 }(jQuery));
