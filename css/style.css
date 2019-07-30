@@ -8786,12 +8786,12 @@ a .glyphicon.icon-after {
 }
 
 #block-panels-mini-header .pane-system-main-menu {
-  font-size: 12px;
+  font-size: 16px;
 }
 
-@media screen and (min-width: 320px) {
+@media screen and (min-width: 481px) {
   #block-panels-mini-header .pane-system-main-menu {
-    font-size: calc(12px + 10 * (100vw - 320px) / 440);
+    font-size: calc(16px + 6 * (100vw - 481px) / 279);
   }
 }
 
@@ -8822,6 +8822,15 @@ a .glyphicon.icon-after {
 
 #block-panels-mini-header .pane-system-main-menu.sticky-menu ul.nav {
   text-align: left;
+}
+
+#block-panels-mini-header .pane-system-main-menu.sticky-menu ul.nav li {
+  margin: 0;
+  display: block;
+}
+
+#block-panels-mini-header .pane-system-main-menu.sticky-menu ul.nav li > a {
+  padding: 0.5em;
 }
 
 #block-panels-mini-header .pane-system-main-menu.sticky-menu:hover {

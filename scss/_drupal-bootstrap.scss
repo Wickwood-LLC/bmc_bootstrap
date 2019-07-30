@@ -1038,7 +1038,7 @@ a {
   }
 
   .pane-system-main-menu {
-    @include fluid-type(font-size, 320px, 760px, 12px, 22px); // Values are $property, $min-vw, $max-vw, $min-font-size, $max-font-size
+    @include fluid-type(font-size, 481px, 760px, 16px, 22px); // Values are $property, $min-vw, $max-vw, $min-font-size, $max-font-size
     .nav > li > a {
       padding: 0;
       
@@ -1059,6 +1059,15 @@ a {
 
       ul.nav {
         text-align: left;
+
+        li {
+          margin: 0;
+          display: block;
+          
+          > a {
+            padding: 0.5em;
+          }
+        }
       }
 
       &:hover {
