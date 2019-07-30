@@ -38,19 +38,11 @@
                 }
 
                 if ($('#admin-menu').length) {
-                    if ($('#navbar-administration').css('display') !== 'none') { // if navbar administration menu is being used
-                        topSpacing = 0;
-                        currentPosition = stickyTop - windowTop;
-                        $('body').css({
-                            'padding-top': '',
-                        });
-                    } else {
-                        topSpacing = $('#admin-menu').outerHeight();
-                        currentPosition = stickyTop + menuHeight - windowTop - topSpacing; // tells how far our target element is from where our screen is currently
-                        $('body').css({
-                            'padding-top': topSpacing - parseInt($('body').css("margin-top")),
-                        });
-                    }
+                    topSpacing = $('#admin-menu').outerHeight();
+                    currentPosition = stickyTop + menuHeight - windowTop - topSpacing; // tells how far our target element is from where our screen is currently
+                    $('body').css({
+                        'padding-top': topSpacing - parseInt($('body').css("margin-top")),
+                    });
                 }
                 //console.log("Top spacing is " + topSpacing);
             }
