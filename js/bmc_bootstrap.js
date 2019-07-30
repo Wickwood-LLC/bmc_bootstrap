@@ -69,7 +69,8 @@
             });
 
             if ($menu.hasClass('sticky-menu')) { // if sticky menu is activated, move the contact pane into the pull out tab
-                $menu.append('.pane-contact-info').css({
+                $menu.append('.pane-contact-info');
+                $menu.css({
                     'top': topSpacing,
                 });
 
