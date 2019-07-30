@@ -8825,11 +8825,14 @@ a .glyphicon.icon-after {
 }
 
 #block-panels-mini-header .pane-system-main-menu.sticky-menu ul.nav li {
-  margin: 0;
   display: block;
 }
 
-#block-panels-mini-header .pane-system-main-menu.sticky-menu ul.nav li > a {
+#block-panels-mini-header .pane-system-main-menu.sticky-menu ul.nav li + li {
+  margin: 0;
+}
+
+#block-panels-mini-header .pane-system-main-menu.sticky-menu ul.nav li + li > a {
   padding: 0.5em;
 }
 
