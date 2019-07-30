@@ -36,6 +36,7 @@
                     $menu.append($('.pane-contact-info'));
                 } else {
                     $menu.removeClass('sticky-menu');
+                    $('.right-column > div').append($('.pane-contact-info'));
                 }
 
                 if ($('#admin-menu').length) {
@@ -64,6 +65,7 @@
                         $menu.css({
                         	'top': '',
                         });
+                        $('.right-column > div').append($('.pane-contact-info'));
                     }
                 }
                 // console.log('Distance from top of page: ' + stickyTop);
