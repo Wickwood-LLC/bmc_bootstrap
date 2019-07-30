@@ -46,7 +46,7 @@
                         });
                     } else {
                         topSpacing = $('#admin-menu').outerHeight();
-                        currentPosition = stickyTop - windowTop - topSpacing; // tells how far our target element is from where our screen is currently
+                        currentPosition = stickyTop + menuHeight - windowTop - topSpacing; // tells how far our target element is from where our screen is currently
                         $('body').css({
                             'padding-top': topSpacing - parseInt($('body').css("margin-top")),
                         });
