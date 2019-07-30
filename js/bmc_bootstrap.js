@@ -25,7 +25,7 @@
                 menuHeight = $menu.outerHeight(); // gets the height of our menu
                 stickyTop = $contact.offset().top; // tells how far our target element is from the top of the page
                 windowTop = $(window).scrollTop(); // tells how far our screen is currently from the top of the page
-                currentPosition = stickyTop - windowTop - topSpacing; // tells how far our target element is from where our screen is currently
+                currentPosition = stickyTop + menuHeight - windowTop - topSpacing; // tells how far our target element is from where our screen is currently
 
                 if ($('sticky-header')) {
                     $menu.removeClass('sticky-header');
@@ -58,7 +58,7 @@
             $(window).scroll(function() { // scroll event
                 if (window.matchMedia("(min-width: 481px)").matches) {
                     windowTop = $(window).scrollTop(); // tells how far our screen is currently from the top of the page
-                    currentPosition = stickyTop - windowTop - topSpacing; // tells how far our target element is from where our screen is currently
+                    currentPosition = stickyTop + menuHeight - windowTop - topSpacing; // tells how far our target element is from where our screen is currently
 
                     if (currentPosition < 0) {
                         $menu.addClass('sticky-menu');
@@ -78,7 +78,7 @@
 
             if ($menu.hasClass('sticky-menu')) { // if sticky menu is activated, move the contact pane into the pull out tab
                 $menu.append('.pane-contact-info').css({
-                    'top': topSpacing
+                    'top': topSpacing,
                 });
 
             }
