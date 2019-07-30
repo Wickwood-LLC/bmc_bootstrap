@@ -8785,6 +8785,84 @@ a .glyphicon.icon-after {
   }
 }
 
+#block-panels-mini-header .pane-system-main-menu {
+  font-size: 16px;
+}
+
+@media screen and (min-width: 481px) {
+  #block-panels-mini-header .pane-system-main-menu {
+    font-size: calc(16px + 6 * (100vw - 481px) / 279);
+  }
+}
+
+@media screen and (min-width: 760px) {
+  #block-panels-mini-header .pane-system-main-menu {
+    font-size: 22px;
+  }
+}
+
+#block-panels-mini-header .pane-system-main-menu .nav > li > a {
+  padding: 0;
+}
+
+#block-panels-mini-header .pane-system-main-menu .nav > li > a:hover {
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+#block-panels-mini-header .pane-system-main-menu.sticky-menu {
+  position: fixed;
+  background: #242341;
+  width: 205px;
+  left: -205px;
+  z-index: 50;
+  transition: position, 0.5s;
+  padding: 0.5em 1em;
+}
+
+#block-panels-mini-header .pane-system-main-menu.sticky-menu ul.nav {
+  text-align: left;
+}
+
+#block-panels-mini-header .pane-system-main-menu.sticky-menu ul.nav li {
+  display: block;
+}
+
+#block-panels-mini-header .pane-system-main-menu.sticky-menu ul.nav li + li {
+  margin: 0;
+}
+
+#block-panels-mini-header .pane-system-main-menu.sticky-menu ul.nav li + li > a {
+  padding: 0.5em;
+}
+
+#block-panels-mini-header .pane-system-main-menu.sticky-menu:hover {
+  position: fixed;
+  left: 0;
+  box-shadow: -5px 5px 20px -3px #383838;
+}
+
+#block-panels-mini-header .pane-system-main-menu.sticky-menu:hover:before {
+  opacity: 0;
+  transition: 0.5s;
+}
+
+#block-panels-mini-header .pane-system-main-menu.sticky-menu:before {
+  content: '\f0c9';
+  font-family: 'FontAwesome';
+  right: -41px;
+  width: 41px;
+  background: white;
+  padding: 0.5em;
+  box-sizing: border-box;
+  top: 0;
+  position: absolute;
+  color: #242440;
+  box-shadow: 2px 2px 30px -3px #383838;
+  opacity: 1;
+  transition: all 1s ease 0.5s;
+}
+
 #block-panels-mini-header .pane-contact-info {
   font-size: 12px;
 }
