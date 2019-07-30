@@ -31,8 +31,9 @@
                     $menu.removeClass('sticky-header');
                 }
 
-                if (window.matchMedia("(max-width: 480px)").matches) {
+                if ((window.matchMedia("(max-width: 480px)").matches) || (currentPosition < 0)) {
                     $menu.addClass('sticky-menu');
+                    $menu.append('.pane-contact-info');
                 } else {
                     $menu.removeClass('sticky-menu');
                 }
@@ -70,10 +71,6 @@
 
             if ($menu.hasClass('sticky-menu')) { // if sticky menu is activated, move the contact pane into the pull out tab
                 $menu.append('.pane-contact-info');
-                $menu.css({
-                    'top': topSpacing,
-                });
-
             }
         }
     };
