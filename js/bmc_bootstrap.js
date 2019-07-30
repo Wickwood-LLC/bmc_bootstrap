@@ -33,7 +33,7 @@
 
                 if ((window.matchMedia("(max-width: 480px)").matches) || (currentPosition < 0)) {
                     $menu.addClass('sticky-menu');
-                    $menu.append('.pane-contact-info');
+                    $menu.append($('.pane-contact-info'));
                 } else {
                     $menu.removeClass('sticky-menu');
                 }
@@ -58,6 +58,7 @@
                     	$menu.css({
                     		'top': topSpacing,
                     	});
+                        $menu.append($('.pane-contact-info'));
                     } else {
                         $menu.removeClass('sticky-menu');
                         $menu.css({
@@ -68,11 +69,6 @@
                 // console.log('Distance from top of page: ' + stickyTop);
                 // console.log('Current position: ' + currentPosition);
             });
-
-            if ($menu.hasClass('sticky-menu')) { // if sticky menu is activated, move the contact pane into the pull out tab
-                console.log("Sticky menu is active");
-                $menu.append($('.pane-contact-info'));
-            }
         }
     };
 }(jQuery));
