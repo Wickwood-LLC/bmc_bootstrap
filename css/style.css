@@ -8863,6 +8863,30 @@ a .glyphicon.icon-after {
   transition: all 1s ease 0.5s;
 }
 
+#block-panels-mini-header .pane-system-main-menu.sticky-menu .pane-contact-info {
+  border-top: 1px solid;
+  padding-top: 0.5em;
+  font-size: 16px;
+  text-align: left;
+  font-size: 14px;
+}
+
+@media screen and (min-width: 320px) {
+  #block-panels-mini-header .pane-system-main-menu.sticky-menu .pane-contact-info {
+    font-size: calc(14px + 2 * (100vw - 320px) / 160);
+  }
+}
+
+@media screen and (min-width: 480px) {
+  #block-panels-mini-header .pane-system-main-menu.sticky-menu .pane-contact-info {
+    font-size: 16px;
+  }
+}
+
+#block-panels-mini-header .pane-system-main-menu.sticky-menu .pane-contact-info .dot {
+  display: none;
+}
+
 #block-panels-mini-header .pane-contact-info {
   font-size: 16px;
 }
@@ -8877,30 +8901,6 @@ a .glyphicon.icon-after {
   #block-panels-mini-header .pane-contact-info {
     font-size: 22px;
   }
-}
-
-.sticky-menu #block-panels-mini-header .pane-contact-info {
-  border-top: 1px solid;
-  padding-top: 0.5em;
-  font-size: 16px;
-  text-align: left;
-  font-size: 14px;
-}
-
-@media screen and (min-width: 320px) {
-  .sticky-menu #block-panels-mini-header .pane-contact-info {
-    font-size: calc(14px + 2 * (100vw - 320px) / 160);
-  }
-}
-
-@media screen and (min-width: 480px) {
-  .sticky-menu #block-panels-mini-header .pane-contact-info {
-    font-size: 16px;
-  }
-}
-
-.sticky-menu #block-panels-mini-header .pane-contact-info .dot {
-  display: none;
 }
 
 #block-panels-mini-header a {

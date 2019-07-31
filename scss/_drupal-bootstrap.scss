@@ -1101,23 +1101,23 @@ a {
         opacity: 1;
         transition: all 1s ease 0.5s;
       }
+
+      .pane-contact-info {
+        border-top: 1px solid;
+        padding-top: 0.5em;
+        font-size: 16px;
+        text-align: left;
+        @include fluid-type(font-size, 320px, 480px, 14px, 16px); // Values are $property, $min-vw, $max-vw, $min-font-size, $max-font-size
+
+        .dot {
+          display: none;
+        }
+      }
     }
   }
 
   .pane-contact-info {
     @include fluid-type(font-size, 481px, 760px, 16px, 22px); // Values are $property, $min-vw, $max-vw, $min-font-size, $max-font-size
-    
-    .sticky-menu & {
-      border-top: 1px solid;
-      padding-top: 0.5em;
-      font-size: 16px;
-      text-align: left;
-      @include fluid-type(font-size, 320px, 480px, 14px, 16px); // Values are $property, $min-vw, $max-vw, $min-font-size, $max-font-size
-
-      .dot {
-        display: none;
-      }
-    }
   }
 
   a {
