@@ -34,9 +34,15 @@
                 if ((window.matchMedia("(max-width: 480px)").matches) || (currentPosition < 0)) {
                     $menu.addClass('sticky-menu');
                     $menu.append($('.pane-contact-info'));
+                    $menu.css({
+                        'top': topSpacing,
+                    });
                 } else {
                     $menu.removeClass('sticky-menu');
                     $('.right-column > div').append($('.pane-contact-info'));
+                    $menu.css({
+                        'top': '',
+                    });
                 }
 
                 if ($('#admin-menu').length) {
