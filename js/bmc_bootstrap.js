@@ -22,10 +22,17 @@
 
             function sticky() {
                 topSpacing = $('#admin-menu').outerHeight();
+                if ($('#admin-menu').length) {
+                    $('body').css({
+                        'padding-top': topSpacing - parseInt($('body').css("margin-top")),
+                    });
+                }
                 menuHeight = $menu.outerHeight(); // gets the height of our menu
                 stickyTop = $contact.offset().top; // tells how far our target element is from the top of the page
                 windowTop = $(window).scrollTop(); // tells how far our screen is currently from the top of the page
                 currentPosition = stickyTop + menuHeight - windowTop - topSpacing; // tells how far our target element is from where our screen is currently
+
+                //console.log("Top spacing is " + topSpacing);
 
                 if ($('sticky-header')) {
                     $menu.removeClass('sticky-header');
@@ -44,15 +51,6 @@
                         'top': '',
                     });
                 }
-
-                if ($('#admin-menu').length) {
-                    topSpacing = $('#admin-menu').outerHeight();
-                    currentPosition = stickyTop + menuHeight - windowTop - topSpacing; // tells how far our target element is from where our screen is currently
-                    $('body').css({
-                        'padding-top': topSpacing - parseInt($('body').css("margin-top")),
-                    });
-                }
-                //console.log("Top spacing is " + topSpacing);
             }
 
             $(window).scroll(function() { // scroll event
