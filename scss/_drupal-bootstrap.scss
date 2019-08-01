@@ -1071,6 +1071,10 @@ a {
 
           > a {
             padding: 0.5em;
+
+            @include breakpoint(769px) {
+              padding: 0;
+            }
           }
         }
       }
@@ -1104,8 +1108,9 @@ a {
 
       .pane-contact-info {
         border-top: 1px solid;
-        padding-top: 0.5em;
         font-size: 16px;
+        margin-top: 1em;
+        padding-top: 0.5em;
         text-align: left;
         @include fluid-type(font-size, 320px, 480px, 14px, 16px); // Values are $property, $min-vw, $max-vw, $min-font-size, $max-font-size
 

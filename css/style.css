@@ -8836,6 +8836,12 @@ a .glyphicon.icon-after {
   padding: 0.5em;
 }
 
+@media (min-width: 769px) {
+  #block-panels-mini-header .pane-system-main-menu.sticky-menu ul.nav li > a {
+    padding: 0;
+  }
+}
+
 #block-panels-mini-header .pane-system-main-menu.sticky-menu:hover {
   position: fixed;
   left: 0;
@@ -8865,8 +8871,9 @@ a .glyphicon.icon-after {
 
 #block-panels-mini-header .pane-system-main-menu.sticky-menu .pane-contact-info {
   border-top: 1px solid;
-  padding-top: 0.5em;
   font-size: 16px;
+  margin-top: 1em;
+  padding-top: 0.5em;
   text-align: left;
   font-size: 14px;
 }
