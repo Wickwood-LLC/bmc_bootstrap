@@ -75,6 +75,10 @@
                 // console.log('Distance from top of page: ' + stickyTop);
                 // console.log('Current position: ' + currentPosition);
             });
+
+            $('#block-widgets-s-socialmedia-share-default').css({
+                'top': topSpacing,
+            });
         }
     };
 }(jQuery));
