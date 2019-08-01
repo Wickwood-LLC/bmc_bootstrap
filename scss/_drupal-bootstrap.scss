@@ -1198,15 +1198,20 @@ body.maintenance-page {
 #block-widgets-s-socialmedia-share-default {
   position: fixed;
   background: #242341;
-  width: 205px;
-  right: -205px;
+  width: 170px;
+  right: -170px;
   z-index: 50;
   transition: position, 0.5s;
   padding: 0.5em 1em;
 
+  div.widgets-element-horizontal {
+    float: left;
+    margin: 5px;
+  }
+
   &:hover {
     position: fixed;
-    left: 0;
+    right: 0;
     box-shadow: -5px 5px 20px -3px #383838;
 
     &:before {
@@ -1216,7 +1221,7 @@ body.maintenance-page {
   }
 
   &:before {
-    content: '\f1e0';
+    content: '\f064';
     font-family: 'FontAwesome';
     left: -41px;
     width: 41px;
