@@ -1194,3 +1194,40 @@ body.maintenance-page {
     text-transform: capitalize;
   }
 }
+
+#block-widgets-s-socialmedia-share-default {
+  position: fixed;
+  background: #242341;
+  width: 205px;
+  right: -205px;
+  z-index: 50;
+  transition: position, 0.5s;
+  padding: 0.5em 1em;
+
+  &:hover {
+    position: fixed;
+    left: 0;
+    box-shadow: -5px 5px 20px -3px #383838;
+
+    &:before {
+      opacity: 0;
+      transition: 0.5s;
+    }
+  }
+
+  &:before {
+    content: '\f1e0';
+    font-family: 'FontAwesome';
+    left: -41px;
+    width: 41px;
+    background: white;
+    padding: 0.5em;
+    box-sizing: border-box;
+    top: 0;
+    position: absolute;
+    color: #242440;
+    box-shadow: 2px 2px 30px -3px #383838;
+    opacity: 1;
+    transition: all 1s ease 0.5s;
+  }
+}
