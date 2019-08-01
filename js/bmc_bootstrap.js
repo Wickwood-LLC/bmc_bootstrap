@@ -51,6 +51,10 @@
                         'top': '',
                     });
                 }
+
+                $('#block-widgets-s-socialmedia-share-default').css({
+                    'top': topSpacing,
+                });
             }
 
             $(window).scroll(function() { // scroll event
@@ -74,10 +78,6 @@
                 }
                 // console.log('Distance from top of page: ' + stickyTop);
                 // console.log('Current position: ' + currentPosition);
-            });
-
-            $('#block-widgets-s-socialmedia-share-default').css({
-                'top': topSpacing,
             });
         }
     };
