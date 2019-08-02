@@ -1052,12 +1052,18 @@ a {
 
     &.sticky-menu {
       position: fixed;
-      background: #242341;
+      background: white;
+      border: 2px solid #dfdfd3;
+      color: #242341;
       width: 205px;
       left: -205px;
       z-index: 50;
       transition: position, 0.5s;
       padding: 0.5em 1em;
+
+      a {
+        color: #242341;
+      }
 
       ul.nav {
         text-align: left;
@@ -1082,7 +1088,7 @@ a {
       &:hover {
         position: fixed;
         left: 0;
-        box-shadow: -5px 5px 20px -3px #383838;
+        box-shadow: 5px 5px 20px -3px #383838;
 
         &:before {
           opacity: 0;
@@ -1197,9 +1203,11 @@ body.maintenance-page {
 
 #block-widgets-s-socialmedia-share-default {
   position: fixed;
-  background: #242341;
-  width: 170px;
-  right: -170px;
+  background: white;
+  border: 2px solid #dfdfd3;
+  color: #242341;
+  width: 128px;
+  right: -128px;
   z-index: 50;
   transition: position, 0.5s;
   padding: 0.5em 1em;
@@ -1221,10 +1229,12 @@ body.maintenance-page {
   }
 
   &:before {
-    content: '\f064';
+    content: '\f0c9';
     font-family: 'FontAwesome';
-    left: -41px;
+    right: -41px;
     width: 41px;
+    height: 41px;
+    line-height: 23.5px;
     background: white;
     padding: 0.5em;
     box-sizing: border-box;
