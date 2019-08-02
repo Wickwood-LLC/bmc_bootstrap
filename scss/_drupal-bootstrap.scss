@@ -1247,3 +1247,18 @@ body.maintenance-page {
     transition: all 1s ease 0.5s;
   }
 }
+
+#print-mail-form {
+  margin: auto;  
+  @include breakpoint(481px) {
+    width: 60vw;
+  }
+
+  .form-item-txt-to-addrs textarea {
+    width: 100%;
+  }
+
+  .form-actions {
+    text-align: center;
+  }
+}

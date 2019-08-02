@@ -9046,4 +9046,22 @@ body.maintenance-page .page-title {
   opacity: 1;
   transition: all 1s ease 0.5s;
 }
+
+#print-mail-form {
+  margin: auto;
+}
+
+@media (min-width: 481px) {
+  #print-mail-form {
+    width: 60vw;
+  }
+}
+
+#print-mail-form .form-item-txt-to-addrs textarea {
+  width: 100%;
+}
+
+#print-mail-form .form-actions {
+  text-align: center;
+}
 /*# sourceMappingURL=style.css.map */
