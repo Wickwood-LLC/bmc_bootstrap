@@ -1101,6 +1101,8 @@ a {
         font-family: 'FontAwesome';
         right: -41px;
         width: 41px;
+        height: 41px;
+        line-height: 25px;
         background: white;
         padding: 0.5em;
         box-sizing: border-box;
@@ -1206,8 +1208,8 @@ body.maintenance-page {
   background: white;
   border: 2px solid #dfdfd3;
   color: #242341;
-  width: 128px;
-  right: -128px;
+  width: 132px;
+  right: -132px;
   z-index: 50;
   transition: position, 0.5s;
   padding: 0.5em 1em;
@@ -1229,12 +1231,11 @@ body.maintenance-page {
   }
 
   &:before {
-    content: '\f0c9';
+    content: '\f1e0';
     font-family: 'FontAwesome';
-    right: -41px;
+    left: -41px;
     width: 41px;
     height: 41px;
-    line-height: 23.5px;
     background: white;
     padding: 0.5em;
     box-sizing: border-box;
