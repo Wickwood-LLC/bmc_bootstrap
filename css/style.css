@@ -9057,7 +9057,7 @@ body.maintenance-page .page-title {
   }
 }
 
-#print-mail-form .form-item-txt-to-addrs textarea {
+#print-mail-form .form-item-txt-to-addrs textarea#edit-txt-to-addrs {
   width: 100%;
 }
 
