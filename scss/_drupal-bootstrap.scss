@@ -124,6 +124,10 @@ img {
   height: auto;
 }
 
+button {
+  text-transform: capitalize;
+}
+
 blockquote {
   font-size: 1em;
   margin: 1em 5%;
@@ -1152,6 +1156,7 @@ a {
   }
 }
 
+.page-user.not-logged-in,
 .page-user-login,
 .page-user-password {
   .page-header {

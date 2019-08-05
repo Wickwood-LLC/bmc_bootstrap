@@ -12,3 +12,17 @@
 
 // Set the proper directory for the Bootstrap Glyphicon font.
 $icon-font-path: '../bootstrap/assets/fonts/bootstrap/';
+
+//== Colors
+//
+//## Gray and brand colors for use across Bootstrap.
+
+$brand-primary:         darken(#428bca, 6.5%) !default; // #337ab7
+
+//== Buttons
+//
+//## For each of Bootstrap's buttons, define text, background and border color.
+
+$btn-primary-color:              #fff !default;
+$btn-primary-bg:                 darken($brand-primary, 5%) !default;
+$btn-primary-border:             lighten($btn-primary-bg, 5%) !default;

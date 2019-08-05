@@ -3711,28 +3711,28 @@ fieldset[disabled] .btn-default.focus {
 
 .btn-primary {
   color: #fff;
-  background-color: #337ab7;
-  border-color: #2e6da4;
+  background-color: #2e6da4;
+  border-color: #337ab7;
 }
 
 .btn-primary:focus, .btn-primary.focus {
   color: #fff;
-  background-color: #286090;
-  border-color: #122b40;
+  background-color: #23527c;
+  border-color: #183854;
 }
 
 .btn-primary:hover {
   color: #fff;
-  background-color: #286090;
-  border-color: #204d74;
+  background-color: #23527c;
+  border-color: #265a88;
 }
 
 .btn-primary:active, .btn-primary.active,
 .open > .btn-primary.dropdown-toggle {
   color: #fff;
-  background-color: #286090;
+  background-color: #23527c;
   background-image: none;
-  border-color: #204d74;
+  border-color: #265a88;
 }
 
 .btn-primary:active:hover, .btn-primary:active:focus, .btn-primary:active.focus, .btn-primary.active:hover, .btn-primary.active:focus, .btn-primary.active.focus,
@@ -3740,20 +3740,20 @@ fieldset[disabled] .btn-default.focus {
 .open > .btn-primary.dropdown-toggle:focus,
 .open > .btn-primary.dropdown-toggle.focus {
   color: #fff;
-  background-color: #204d74;
-  border-color: #122b40;
+  background-color: #1b4060;
+  border-color: #183854;
 }
 
 .btn-primary.disabled:hover, .btn-primary.disabled:focus, .btn-primary.disabled.focus, .btn-primary[disabled]:hover, .btn-primary[disabled]:focus, .btn-primary[disabled].focus,
 fieldset[disabled] .btn-primary:hover,
 fieldset[disabled] .btn-primary:focus,
 fieldset[disabled] .btn-primary.focus {
-  background-color: #337ab7;
-  border-color: #2e6da4;
+  background-color: #2e6da4;
+  border-color: #337ab7;
 }
 
 .btn-primary .badge {
-  color: #337ab7;
+  color: #2e6da4;
   background-color: #fff;
 }
 
@@ -7786,6 +7786,10 @@ img {
   height: auto;
 }
 
+button {
+  text-transform: capitalize;
+}
+
 blockquote {
   font-size: 1em;
   margin: 1em 5%;
@@ -8948,16 +8952,19 @@ a .glyphicon.icon-after {
   color: #dfdfd3;
 }
 
+.page-user.not-logged-in .page-header,
 .page-user-login .page-header,
 .page-user-password .page-header {
   text-align: center;
 }
 
+.page-user.not-logged-in .form-item,
 .page-user-login .form-item,
 .page-user-password .form-item {
   text-align: center;
 }
 
+.page-user.not-logged-in .form-actions,
 .page-user-login .form-actions,
 .page-user-password .form-actions {
   text-align: center;
