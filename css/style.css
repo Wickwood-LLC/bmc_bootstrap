@@ -7790,20 +7790,34 @@ button {
   text-transform: capitalize;
 }
 
-.btn-primary:focus, .btn-primary.focus {
+.btn-primary,
+button[type="submit"] {
+  color: #fff;
+  background-color: #2e6da4;
+  border-color: #286090;
+}
+
+.btn-primary:focus, .btn-primary.focus,
+button[type="submit"]:focus,
+button[type="submit"].focus {
   color: #fff;
   background-color: #3c87c8;
   border-color: #64a0d3;
 }
 
-.btn-primary:hover {
+.btn-primary:hover,
+button[type="submit"]:hover {
   color: #fff;
   background-color: #3c87c8;
   border-color: #3680bf;
 }
 
 .btn-primary:active, .btn-primary.active,
-.open > .btn-primary.dropdown-toggle {
+.open > .btn-primary.dropdown-toggle,
+button[type="submit"]:active,
+button[type="submit"].active,
+.open >
+button[type="submit"].dropdown-toggle {
   color: #fff;
   background-color: #3c87c8;
   background-image: none;
@@ -7813,7 +7827,19 @@ button {
 .btn-primary:active:hover, .btn-primary:active:focus, .btn-primary:active.focus, .btn-primary.active:hover, .btn-primary.active:focus, .btn-primary.active.focus,
 .open > .btn-primary.dropdown-toggle:hover,
 .open > .btn-primary.dropdown-toggle:focus,
-.open > .btn-primary.dropdown-toggle.focus {
+.open > .btn-primary.dropdown-toggle.focus,
+button[type="submit"]:active:hover,
+button[type="submit"]:active:focus,
+button[type="submit"]:active.focus,
+button[type="submit"].active:hover,
+button[type="submit"].active:focus,
+button[type="submit"].active.focus,
+.open >
+button[type="submit"].dropdown-toggle:hover,
+.open >
+button[type="submit"].dropdown-toggle:focus,
+.open >
+button[type="submit"].dropdown-toggle.focus {
   color: #fff;
   background-color: #5898d0;
   border-color: #64a0d3;
@@ -7822,12 +7848,25 @@ button {
 .btn-primary.disabled:hover, .btn-primary.disabled:focus, .btn-primary.disabled.focus, .btn-primary[disabled]:hover, .btn-primary[disabled]:focus, .btn-primary[disabled].focus,
 fieldset[disabled] .btn-primary:hover,
 fieldset[disabled] .btn-primary:focus,
-fieldset[disabled] .btn-primary.focus {
+fieldset[disabled] .btn-primary.focus,
+button[type="submit"].disabled:hover,
+button[type="submit"].disabled:focus,
+button[type="submit"].disabled.focus,
+button[type="submit"][disabled]:hover,
+button[type="submit"][disabled]:focus,
+button[type="submit"][disabled].focus,
+fieldset[disabled]
+button[type="submit"]:hover,
+fieldset[disabled]
+button[type="submit"]:focus,
+fieldset[disabled]
+button[type="submit"].focus {
   background-color: #2e6da4;
   border-color: #286090;
 }
 
-.btn-primary .badge {
+.btn-primary .badge,
+button[type="submit"] .badge {
   color: #fff;
   background-color: #fff;
 }

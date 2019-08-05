@@ -127,7 +127,12 @@ img {
 button {
   text-transform: capitalize;
 }
-.btn-primary {
+.btn-primary,
+button[type="submit"] {
+  color: $btn-primary-color;
+  background-color: $btn-primary-bg;
+  border-color: $btn-primary-border;
+
   &:focus,
   &.focus {
     color: $btn-primary-color;
