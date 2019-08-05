@@ -26,6 +26,13 @@
                     $('body').css({
                         'padding-top': topSpacing - parseInt($('body').css("margin-top")),
                     });
+                    $('#block-widgets-s-socialmedia-share-default').css({
+                        'top': topSpacing,
+                    });
+                } else {
+                    $('#block-widgets-s-socialmedia-share-default').css({
+                        'top': '0',
+                    });
                 }
                 menuHeight = $menu.outerHeight(); // gets the height of our menu
                 stickyTop = $contact.offset().top; // tells how far our target element is from the top of the page
@@ -41,9 +48,15 @@
                 if ((window.matchMedia("(max-width: 480px)").matches) || (currentPosition < 0)) {
                     $menu.addClass('sticky-menu');
                     $menu.append($('.pane-contact-info'));
-                    $menu.css({
-                        'top': topSpacing,
-                    });
+                    if ($('#admin-menu').length) {
+                        $menu.css({
+                            'top': topSpacing,
+                        });
+                    } else {
+                        $menu.css({
+                            'top': '0',
+                        });
+                    }
                 } else {
                     $menu.removeClass('sticky-menu');
                     $('.right-column > div').append($('.pane-contact-info'));
@@ -51,10 +64,6 @@
                         'top': '',
                     });
                 }
-
-                $('#block-widgets-s-socialmedia-share-default').css({
-                    'top': topSpacing,
-                });
             }
 
             $(window).scroll(function() { // scroll event
@@ -64,9 +73,15 @@
 
                     if (currentPosition < 0) {
                         $menu.addClass('sticky-menu');
-                    	$menu.css({
-                    		'top': topSpacing,
-                    	});
+                    	if ($('#admin-menu').length) {
+                            $menu.css({
+                                'top': topSpacing,
+                            });
+                        } else {
+                            $menu.css({
+                                'top': '0',
+                            });
+                        }
                         $menu.append($('.pane-contact-info'));
                     } else {
                         $menu.removeClass('sticky-menu');
