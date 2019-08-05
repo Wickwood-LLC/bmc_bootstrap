@@ -7791,6 +7791,7 @@ button {
 }
 
 .btn-primary,
+.webform-submit,
 #edit-submit {
   color: #fff;
   background-color: #2e6da4;
@@ -7798,6 +7799,8 @@ button {
 }
 
 .btn-primary:focus, .btn-primary.focus,
+.webform-submit:focus,
+.webform-submit.focus,
 #edit-submit:focus,
 #edit-submit.focus {
   color: #fff;
@@ -7806,6 +7809,7 @@ button {
 }
 
 .btn-primary:hover,
+.webform-submit:hover,
 #edit-submit:hover {
   color: #fff;
   background-color: #3c87c8;
@@ -7814,6 +7818,10 @@ button {
 
 .btn-primary:active, .btn-primary.active,
 .open > .btn-primary.dropdown-toggle,
+.webform-submit:active,
+.webform-submit.active,
+.open >
+.webform-submit.dropdown-toggle,
 #edit-submit:active,
 #edit-submit.active,
 .open >
@@ -7828,6 +7836,18 @@ button {
 .open > .btn-primary.dropdown-toggle:hover,
 .open > .btn-primary.dropdown-toggle:focus,
 .open > .btn-primary.dropdown-toggle.focus,
+.webform-submit:active:hover,
+.webform-submit:active:focus,
+.webform-submit:active.focus,
+.webform-submit.active:hover,
+.webform-submit.active:focus,
+.webform-submit.active.focus,
+.open >
+.webform-submit.dropdown-toggle:hover,
+.open >
+.webform-submit.dropdown-toggle:focus,
+.open >
+.webform-submit.dropdown-toggle.focus,
 #edit-submit:active:hover,
 #edit-submit:active:focus,
 #edit-submit:active.focus,
@@ -7849,6 +7869,18 @@ button {
 fieldset[disabled] .btn-primary:hover,
 fieldset[disabled] .btn-primary:focus,
 fieldset[disabled] .btn-primary.focus,
+.webform-submit.disabled:hover,
+.webform-submit.disabled:focus,
+.webform-submit.disabled.focus,
+.webform-submit[disabled]:hover,
+.webform-submit[disabled]:focus,
+.webform-submit[disabled].focus,
+fieldset[disabled]
+.webform-submit:hover,
+fieldset[disabled]
+.webform-submit:focus,
+fieldset[disabled]
+.webform-submit.focus,
 #edit-submit.disabled:hover,
 #edit-submit.disabled:focus,
 #edit-submit.disabled.focus,
@@ -7866,6 +7898,7 @@ fieldset[disabled]
 }
 
 .btn-primary .badge,
+.webform-submit .badge,
 #edit-submit .badge {
   color: #fff;
   background-color: #fff;
@@ -7923,6 +7956,14 @@ blockquote {
   font-size: 1em;
   margin: 1em 5%;
   font-style: italic;
+}
+
+.boxed {
+  border-color: #242340;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 10px;
+  padding: 1em;
 }
 
 .nav > li > a:hover, .nav > li > a:focus {
