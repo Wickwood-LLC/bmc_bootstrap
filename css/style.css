@@ -7791,22 +7791,22 @@ button {
 }
 
 .btn-primary,
-button[type="submit"] {
+#edit-submit {
   color: #fff;
   background-color: #2e6da4;
   border-color: #286090;
 }
 
 .btn-primary:focus, .btn-primary.focus,
-button[type="submit"]:focus,
-button[type="submit"].focus {
+#edit-submit:focus,
+#edit-submit.focus {
   color: #fff;
   background-color: #3c87c8;
   border-color: #64a0d3;
 }
 
 .btn-primary:hover,
-button[type="submit"]:hover {
+#edit-submit:hover {
   color: #fff;
   background-color: #3c87c8;
   border-color: #3680bf;
@@ -7814,10 +7814,10 @@ button[type="submit"]:hover {
 
 .btn-primary:active, .btn-primary.active,
 .open > .btn-primary.dropdown-toggle,
-button[type="submit"]:active,
-button[type="submit"].active,
+#edit-submit:active,
+#edit-submit.active,
 .open >
-button[type="submit"].dropdown-toggle {
+#edit-submit.dropdown-toggle {
   color: #fff;
   background-color: #3c87c8;
   background-image: none;
@@ -7828,18 +7828,18 @@ button[type="submit"].dropdown-toggle {
 .open > .btn-primary.dropdown-toggle:hover,
 .open > .btn-primary.dropdown-toggle:focus,
 .open > .btn-primary.dropdown-toggle.focus,
-button[type="submit"]:active:hover,
-button[type="submit"]:active:focus,
-button[type="submit"]:active.focus,
-button[type="submit"].active:hover,
-button[type="submit"].active:focus,
-button[type="submit"].active.focus,
+#edit-submit:active:hover,
+#edit-submit:active:focus,
+#edit-submit:active.focus,
+#edit-submit.active:hover,
+#edit-submit.active:focus,
+#edit-submit.active.focus,
 .open >
-button[type="submit"].dropdown-toggle:hover,
+#edit-submit.dropdown-toggle:hover,
 .open >
-button[type="submit"].dropdown-toggle:focus,
+#edit-submit.dropdown-toggle:focus,
 .open >
-button[type="submit"].dropdown-toggle.focus {
+#edit-submit.dropdown-toggle.focus {
   color: #fff;
   background-color: #5898d0;
   border-color: #64a0d3;
@@ -7849,25 +7849,73 @@ button[type="submit"].dropdown-toggle.focus {
 fieldset[disabled] .btn-primary:hover,
 fieldset[disabled] .btn-primary:focus,
 fieldset[disabled] .btn-primary.focus,
-button[type="submit"].disabled:hover,
-button[type="submit"].disabled:focus,
-button[type="submit"].disabled.focus,
-button[type="submit"][disabled]:hover,
-button[type="submit"][disabled]:focus,
-button[type="submit"][disabled].focus,
+#edit-submit.disabled:hover,
+#edit-submit.disabled:focus,
+#edit-submit.disabled.focus,
+#edit-submit[disabled]:hover,
+#edit-submit[disabled]:focus,
+#edit-submit[disabled].focus,
 fieldset[disabled]
-button[type="submit"]:hover,
+#edit-submit:hover,
 fieldset[disabled]
-button[type="submit"]:focus,
+#edit-submit:focus,
 fieldset[disabled]
-button[type="submit"].focus {
+#edit-submit.focus {
   background-color: #2e6da4;
   border-color: #286090;
 }
 
 .btn-primary .badge,
-button[type="submit"] .badge {
+#edit-submit .badge {
   color: #fff;
+  background-color: #fff;
+}
+
+#edit-cancel {
+  color: #fff;
+  background-color: #d9534f;
+  border-color: #d43f3a;
+}
+
+#edit-cancel:focus, #edit-cancel.focus {
+  color: #fff;
+  background-color: #c9302c;
+  border-color: #761c19;
+}
+
+#edit-cancel:hover {
+  color: #fff;
+  background-color: #c9302c;
+  border-color: #ac2925;
+}
+
+#edit-cancel:active, #edit-cancel.active,
+.open > #edit-cancel.dropdown-toggle {
+  color: #fff;
+  background-color: #c9302c;
+  background-image: none;
+  border-color: #ac2925;
+}
+
+#edit-cancel:active:hover, #edit-cancel:active:focus, #edit-cancel:active.focus, #edit-cancel.active:hover, #edit-cancel.active:focus, #edit-cancel.active.focus,
+.open > #edit-cancel.dropdown-toggle:hover,
+.open > #edit-cancel.dropdown-toggle:focus,
+.open > #edit-cancel.dropdown-toggle.focus {
+  color: #fff;
+  background-color: #ac2925;
+  border-color: #761c19;
+}
+
+#edit-cancel.disabled:hover, #edit-cancel.disabled:focus, #edit-cancel.disabled.focus, #edit-cancel[disabled]:hover, #edit-cancel[disabled]:focus, #edit-cancel[disabled].focus,
+fieldset[disabled] #edit-cancel:hover,
+fieldset[disabled] #edit-cancel:focus,
+fieldset[disabled] #edit-cancel.focus {
+  background-color: #d9534f;
+  border-color: #d43f3a;
+}
+
+#edit-cancel .badge {
+  color: #d9534f;
   background-color: #fff;
 }
 

@@ -128,7 +128,7 @@ button {
   text-transform: capitalize;
 }
 .btn-primary,
-button[type="submit"] {
+#edit-submit {
   color: $btn-primary-color;
   background-color: $btn-primary-bg;
   border-color: $btn-primary-border;
@@ -175,6 +175,9 @@ button[type="submit"] {
     color: $btn-primary-color;
     background-color: $btn-primary-color;
   }
+}
+#edit-cancel {
+  @include button-variant($btn-danger-color, $btn-danger-bg, $btn-danger-border);
 }
 
 blockquote {
