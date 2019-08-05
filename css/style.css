@@ -7792,13 +7792,13 @@ button {
 
 .btn-primary:focus, .btn-primary.focus {
   color: #fff;
-  background-color: white;
+  background-color: #3c87c8;
   border-color: #64a0d3;
 }
 
 .btn-primary:hover {
   color: #fff;
-  background-color: white;
+  background-color: #3c87c8;
   border-color: #3680bf;
 }
 
@@ -7815,7 +7815,7 @@ button {
 .open > .btn-primary.dropdown-toggle:focus,
 .open > .btn-primary.dropdown-toggle.focus {
   color: #fff;
-  background-color: white;
+  background-color: #5898d0;
   border-color: #64a0d3;
 }
 
@@ -7823,7 +7823,7 @@ button {
 fieldset[disabled] .btn-primary:hover,
 fieldset[disabled] .btn-primary:focus,
 fieldset[disabled] .btn-primary.focus {
-  background-color: #fff;
+  background-color: #2e6da4;
   border-color: #286090;
 }
 
