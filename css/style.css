@@ -8260,6 +8260,7 @@ fieldset .panel-heading a.panel-title:hover {
 
 .form-actions {
   clear: both;
+  text-align: center;
 }
 
 .managed-files.table td:first-child {
