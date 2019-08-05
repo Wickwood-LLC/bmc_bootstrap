@@ -127,6 +127,50 @@ img {
 button {
   text-transform: capitalize;
 }
+.btn-primary {
+  &:focus,
+  &.focus {
+    color: $btn-primary-color;
+    background-color: lighten($btn-primary-color, 10%);
+    border-color: lighten($btn-primary-border, 25%);
+  }
+  &:hover {
+    color: $btn-primary-color;
+    background-color: lighten($btn-primary-color, 10%);
+    border-color: lighten($btn-primary-border, 12%);
+  }
+  &:active,
+  &.active,
+  .open > &.dropdown-toggle {
+    color: $btn-primary-color;
+    background-color: lighten($btn-primary-bg, 10%);
+    background-image: none;
+    border-color: lighten($btn-primary-border, 12%);
+
+    &:hover,
+    &:focus,
+    &.focus {
+      color: $btn-primary-color;
+      background-color: lighten($btn-primary-color, 17%);
+      border-color: lighten($btn-primary-border, 25%);
+    }
+  }
+  &.disabled,
+  &[disabled],
+  fieldset[disabled] & {
+    &:hover,
+    &:focus,
+    &.focus {
+      background-color: $btn-primary-color;
+      border-color: $btn-primary-border;
+    }
+  }
+
+  .badge {
+    color: $btn-primary-color;
+    background-color: $btn-primary-color;
+  }
+}
 
 blockquote {
   font-size: 1em;
