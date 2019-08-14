@@ -9254,4 +9254,10 @@ body.maintenance-page .page-title {
 #print-mail-form .form-actions {
   text-align: center;
 }
+
+.g-recaptcha {
+  display: table;
+  margin: auto;
+  margin-bottom: 0.5em;
+}
 /*# sourceMappingURL=style.css.map */
