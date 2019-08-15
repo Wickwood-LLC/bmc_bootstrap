@@ -1347,3 +1347,12 @@ body.maintenance-page {
   margin: auto;
   margin-bottom: 0.5em;
 }
+
+.media-inline_image_with_caption {
+  img {
+    width: 100%;
+  }
+  .field-name-field-long-caption {
+    font-size: 18px;
+  }
+}
