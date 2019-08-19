@@ -9261,11 +9261,16 @@ body.maintenance-page .page-title {
   margin-bottom: 0.5em;
 }
 
+.media-inline_image_with_caption .content > br {
+  display: none;
+}
+
 .media-inline_image_with_caption img {
   width: 100%;
 }
 
 .media-inline_image_with_caption .field-name-field-long-caption {
   font-size: 18px;
+  margin: 0.5em 1em;
 }
 /*# sourceMappingURL=style.css.map */
