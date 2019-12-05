@@ -70,6 +70,9 @@
   <!--[if lt IE 9]>
     <script src="https://cdn.jsdelivr.net/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
   <![endif]-->
+  <script>
+    document.addEventListener("touchstart", function() {},false);
+  </script>
   <?php print $scripts; ?>
 </head>
 <body<?php print $body_attributes; ?>>
