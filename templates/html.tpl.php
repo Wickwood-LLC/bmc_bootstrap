@@ -71,7 +71,7 @@
     <script src="https://cdn.jsdelivr.net/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
   <![endif]-->
   <script>
-    document.addEventListener("touchstart", function() {},false);
+    (function(l){var i,s={touchend:function(){}};for(i in s)l.addEventListener(i,s)})(document); // sticky hover fix in iOS
   </script>
   <?php print $scripts; ?>
 </head>
